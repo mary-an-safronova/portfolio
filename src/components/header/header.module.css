@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    max-width: 80vw;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    margin: auto;
+    position: fixed;
+    left: 10vw;
+    z-index: 1;
+  }
+  
+  .themeBtnWrap {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    margin: 10px;
+    padding: 0 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 50px;
+    opacity: 0.6;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(133, 133, 173);
+    transition: box-shadow 0.3s ease;
+    opacity: 1;
+  }
+  
+  .btn_acive {
+    box-shadow: 0 0 10px rgb(133, 133, 173);
+    transition: box-shadow 0.3s ease;
+    opacity: 1;
+  }
+  
+  .themeBtn {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .btn_color_darkTheme {
+    color: rgb(255, 255, 255);
+  }
+  
+  .btn_color_lightTheme {
+    color: rgb(19, 19, 19);
+  }
+
+  .btn_nav_lightTheme:hover {
+    box-shadow: 0 0 10px #228383;
+  }
+  
+  .navMenu {
+    display: flex;
+    align-items: center;
+  }
+  

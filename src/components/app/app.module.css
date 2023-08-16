@@ -1,0 +1,43 @@
+.app {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.parallelogramLeft {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  right: 100px;
+  z-index: 0;
+  width: 90vw;
+  height: 100vh;
+  transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+
+.parallelogramRight {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 150px;
+  z-index: 0;
+  width: 40vw;
+  height: 100vh;
+  transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+
+.theme_dark {
+  background-color: rgb(22, 22, 22);
+}
+
+.theme_light {
+  background-color: rgb(255, 255, 255);
+}
+
