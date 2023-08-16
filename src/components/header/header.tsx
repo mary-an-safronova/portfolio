@@ -29,14 +29,14 @@ const Header: FC<Props> = ({ theme, setTheme, themeLightClass, themeDarkClass })
                     ${theme !== themeLightClass ? headerStyle.btn_color_darkTheme : headerStyle.btn_color_lightTheme} 
                     ${currentTheme === 'dark' && headerStyle.btn_acive}`} 
                 onClick={handleDarkThemeBtn}
-            >dark theme
+            >Dark Theme
             </button>
             <button 
                 className={`${headerStyle.btn} ${headerStyle.themeBtn} 
                     ${theme !== themeLightClass ? headerStyle.btn_color_darkTheme : headerStyle.btn_color_lightTheme} 
                     ${currentTheme === 'light' && headerStyle.btn_acive}`} 
                 onClick={handleLightThemeBtn}
-            >light theme
+            >Light Theme
             </button>
             </div>
 
