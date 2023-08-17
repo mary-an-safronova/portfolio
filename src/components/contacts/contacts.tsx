@@ -1,5 +1,5 @@
 import contactsStyle from './contacts.module.css';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { telegramIcon, vkIcon, linkedinIcon, instagramIcon, phoneIcon, emailIcon } from '../../images/icons';
 
 type Props = {
@@ -9,9 +9,16 @@ type Props = {
 }
 
 const Contacts: FC<Props> = ({ theme, themeLightClass, scrollToRef }) => {
+    const [num, setNum] = useState('');
+    const [colorBtn, setColorBtn] = useState('rgb(133, 133, 173)');
 
     // Цвет текста в зависимости от темы
     const themeTextColorClass = theme !== themeLightClass ? contactsStyle.text_color_darkTheme : contactsStyle.text_color_lightTheme;
+
+    const showNumber = () => {
+        setNum('+7 (985) 885-54-04');
+        setColorBtn('transparent');
+    }
 
     return (
         <section className={`${contactsStyle.wrap}`} id='contacts' ref={scrollToRef}>
@@ -26,7 +33,7 @@ const Contacts: FC<Props> = ({ theme, themeLightClass, scrollToRef }) => {
                 <p className={contactsStyle.contactTitle}>Phone</p>
                 <div className={contactsStyle.iconContactWrap}>
                     <img className={contactsStyle.contactImg} src={phoneIcon} alt="Phone icon" />
-                    <p className={contactsStyle.contact}>+7 (985) 885-54-04</p>
+                    <button className={`${contactsStyle.contactNumWrap} ${themeTextColorClass}`} onClick={showNumber} style={{ backgroundColor: colorBtn, transition: 'background-color 0.3s ease' }}>{num}</button>   
                 </div>
 
                 <p className={contactsStyle.contactTitle}>Social</p>
