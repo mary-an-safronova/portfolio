@@ -1,4 +1,4 @@
-# My portfolio
+## My portfolio
 
 #### The project is a one-page application with my portfolio.
 
