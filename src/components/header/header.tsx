@@ -7,11 +7,16 @@ type Props = {
     themeLightClass: string;
     themeDarkClass: string;
     currentTab: string;
-    setCurrentTab: (currentTab: string) => void;
+    // setCurrentTab: (currentTab: string) => void;
+    handleTabClick: (value: string) => void;
 }
 
-const Header: FC<Props> = ({ theme, setTheme, themeLightClass, themeDarkClass, currentTab, setCurrentTab }) => {
+const Header: FC<Props> = ({ theme, setTheme, themeLightClass, themeDarkClass, currentTab, handleTabClick }) => {
     const [currentTheme, setCurrentTheme] = useState<string>('dark');
+
+    // Цвета фона
+    const parallelogramLeftColor = theme !== themeLightClass ? 'rgb(22, 22, 22)' : 'rgb(255, 255, 255)';
+    const parallelogramRightColor = theme !== themeLightClass ? 'rgb(82, 82, 82)' : '#33b7b6';
 
     // Переключение на темную тему по клику на кнопку
     const handleDarkThemeBtn = (): void => {
@@ -29,17 +34,18 @@ const Header: FC<Props> = ({ theme, setTheme, themeLightClass, themeDarkClass, c
     const themeBtnColorClass = theme !== themeLightClass ? headerStyle.btn_color_darkTheme : headerStyle.btn_color_lightTheme;
     const navBtnThemeClass = theme !== themeLightClass ? headerStyle.btn_color_darkTheme : (headerStyle.btn_color_lightTheme && headerStyle.btn_nav_lightTheme);
 
-    // Реализация перемещения скролла страницы до нужного блока в зависимости от переключения кнопки меню
-    const handleTabClick = (value: string) => {
-        const block = document.getElementById(value);
-        if (block) {
-            block.scrollIntoView({ behavior: "smooth" });
-            setTimeout(() => setCurrentTab(value), 500);
-        }
-    };
+    // // Реализация перемещения скролла страницы до нужного блока в зависимости от переключения кнопки меню
+    // const handleTabClick = (value: string) => {
+    //     const block = document.getElementById(value);
+    //     if (block) {
+    //         block.scrollIntoView({ behavior: "smooth" });
+    //         setTimeout(() => setCurrentTab(value), 500);
+    //     }
+    // };
 
     return (
-        <header className={`${headerStyle.header}`}>
+        <header className={`${headerStyle.header}`} style={{ backgroundColor: parallelogramLeftColor }}>
+            <div className={headerStyle.parallelogramRight} style={{ backgroundColor: parallelogramRightColor }}></div>
             <div className={headerStyle.themeBtnWrap}>
                 <button className={`${headerStyle.btn} ${headerStyle.themeBtn} ${themeBtnColorClass} ${currentTheme === 'dark' && headerStyle.btn_active}`} onClick={handleDarkThemeBtn}>Dark Theme</button>
                 <button className={`${headerStyle.btn} ${headerStyle.themeBtn} ${themeBtnColorClass} ${currentTheme === 'light' && headerStyle.btn_active}`} onClick={handleLightThemeBtn}>Light Theme</button>

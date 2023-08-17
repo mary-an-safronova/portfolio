@@ -12,7 +12,10 @@
     width: 100%;
     height: calc(100vh - 100px);
     position: absolute;
+    z-index: 3;
     bottom: 0;
+    display: flex;
+    align-items: center;
 }
 
 .innerWrap_theme_dark {
@@ -21,4 +24,87 @@
 
 .innerWrap_theme_light {
     background-color: rgb(255, 255, 255);
+}
+
+.infoWrap {
+    margin: 50px 0 50px 50px;
+}
+
+.title {
+    font-size: 50px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 30px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.skillsTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill {
+    margin: 0 10px 10px 0;
+    border: 1px solid rgb(133, 133, 173);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.skillText {
+    margin: 0;
+    font-size: 18px;
+}
+
+.buttonWrap {
+    margin-top: 50px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 0 10px;
+    border: none;
+    background-color: rgb(133, 133, 173);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 50px;
+    opacity: 0.6;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgb(133, 133, 173);
+    transition: box-shadow 0.3s ease;
+    opacity: 1;
+}
+
+.photoWrap {
+    margin: 50px 50px 50px 0;
+    width: 50%;
+}
+
+.photo {
+    width: 100%;
+}
+
+.text_color_darkTheme {
+    color: rgb(255, 255, 255);
+}
+  
+.text_color_lightTheme {
+    color: rgb(19, 19, 19);
 }
