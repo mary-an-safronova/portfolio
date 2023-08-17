@@ -32,22 +32,22 @@ const Contacts: FC<Props> = ({ theme, themeLightClass, scrollToRef }) => {
                 <p className={contactsStyle.contactTitle}>Social</p>
                 <ul className={contactsStyle.socialWrap}>
                     <li className={contactsStyle.socialIcon}>
-                        <a className={contactsStyle.link} href="https://t.me/Mary_Safronova">
+                        <a className={contactsStyle.link} href="https://t.me/Mary_Safronova" target='blank'>
                             <img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" />
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
-                        <a className={contactsStyle.link} href="https://www.linkedin.com/in/mariia-safronova-1bb3a9288/">
+                        <a className={contactsStyle.link} href="https://www.linkedin.com/in/mariia-safronova-1bb3a9288/" target='blank'>
                             <img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" />
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
-                        <a className={contactsStyle.link} href="https://vk.com/marya_an">
+                        <a className={contactsStyle.link} href="https://vk.com/marya_an" target='blank'>
                             <img className={contactsStyle.img} src={vkIcon} alt="VK icon" />
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
-                        <a className={contactsStyle.link} href="https://instagram.com/marya.safronova?igshid=ZGUzMzM3NWJiOQ==">
+                        <a className={contactsStyle.link} href="https://instagram.com/marya.safronova?igshid=ZGUzMzM3NWJiOQ==" target='blank'>
                             <img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" />
                         </a>
                     </li>
