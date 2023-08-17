@@ -6,8 +6,9 @@
     justify-content: space-between;
     margin: auto;
     position: fixed;
+    top: 0;
     left: 10vw;
-    z-index: 1;
+    z-index: 10;
   }
   
   .themeBtnWrap {
@@ -34,10 +35,16 @@
     opacity: 1;
   }
   
-  .btn_acive {
+  .btn_active {
     box-shadow: 0 0 10px rgb(133, 133, 173);
     transition: box-shadow 0.3s ease;
     opacity: 1;
+  }
+
+  .btn_inactive {
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+    opacity: 0.6;
   }
   
   .themeBtn {
@@ -54,6 +61,10 @@
   }
 
   .btn_nav_lightTheme:hover {
+    box-shadow: 0 0 10px #228383;
+  }
+
+  .btn_nav_lightTheme_active {
     box-shadow: 0 0 10px #228383;
   }
   
