@@ -1,90 +1,144 @@
 .header {
-    display: flex;
-    max-width: 80vw;
+  display: flex;
+  max-width: 80vw;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.parallelogramRight {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 39.8vw;
+  height: 100px;
+  transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+
+.themeBtnWrap {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin: 10px;
+  padding: 0 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 40px;
+  height: 50px;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(133, 133, 173);
+  transition: box-shadow 0.3s ease;
+  opacity: 1;
+}
+
+.btn_active {
+  box-shadow: 0 0 10px rgb(133, 133, 173);
+  transition: box-shadow 0.3s ease;
+  opacity: 1;
+}
+
+.btn_inactive {
+  box-shadow: none;
+  transition: box-shadow 0.3s ease;
+  opacity: 0.6;
+}
+
+.themeBtn {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn_color_darkTheme {
+  color: rgb(255, 255, 255);
+}
+
+.btn_color_lightTheme {
+  color: rgb(19, 19, 19);
+}
+
+.btn_nav_lightTheme:hover {
+  box-shadow: 0 0 10px #228383;
+}
+
+.btn_nav_lightTheme_active {
+  box-shadow: 0 0 10px #228383;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    max-width: 1152px;
     width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 10vw;
-    z-index: 10;
   }
+}
 
-  .parallelogramRight {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    width: 39.8vw;
-    height: 100px;
-    transform: skew(-20deg);
-      -webkit-transform: skew(-20deg);
-      -moz-transform: skew(-20deg);
-      -o-transform: skew(-20deg);
-  }
-  
-  .themeBtnWrap {
-    display: flex;
-    align-items: center;
-  }
-  
+@media screen and (max-width: 1280px) {
   .btn {
-    margin: 10px;
-    padding: 0 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 40px;
-    height: 50px;
-    opacity: 0.6;
-    z-index: 10;
-  }
-  
-  .btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(133, 133, 173);
-    transition: box-shadow 0.3s ease;
-    opacity: 1;
-  }
-  
-  .btn_active {
-    box-shadow: 0 0 10px rgb(133, 133, 173);
-    transition: box-shadow 0.3s ease;
-    opacity: 1;
-  }
-
-  .btn_inactive {
-    box-shadow: none;
-    transition: box-shadow 0.3s ease;
-    opacity: 0.6;
-  }
-  
-  .themeBtn {
     font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .btn_color_darkTheme {
-    color: rgb(255, 255, 255);
-  }
-  
-  .btn_color_lightTheme {
-    color: rgb(19, 19, 19);
+    border-radius: 30px;
+    height: 45px;
   }
 
-  .btn_nav_lightTheme:hover {
-    box-shadow: 0 0 10px #228383;
+  .themeBtn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 90vw;
+    width: 100%;
+  }
+  .btn {
+    font-size: 14px;
+    border-radius: 25px;
+    height: 40px;
+    margin: 5px;
   }
 
-  .btn_nav_lightTheme_active {
-    box-shadow: 0 0 10px #228383;
+  .themeBtnWrap {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60px;
   }
-  
-  .navMenu {
-    display: flex;
-    align-items: center;
+
+  .themeBtn {
+    font-size: 12px;
+    height: 30px;
   }
-  
+}
+
+@media screen and (max-width: 550px) {
+  .btn {
+    font-size: 12px;
+    border-radius: 20px;
+    height: 30px;
+    margin: 0 0 0 5px;
+  }
+
+  .themeBtn {
+    font-size: 12px;
+  }
+} 

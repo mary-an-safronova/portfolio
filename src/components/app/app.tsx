@@ -39,12 +39,15 @@ function App() {
     <div className={`${appStyle.app} ${theme !== themeLightClass ? themeDarkClass : themeLightClass}`}>
       <div className={appStyle.parallelogramLeft} style={{ backgroundColor: parallelogramLeftColor }}></div>
       <div className={appStyle.parallelogramRight} style={{ backgroundColor: parallelogramRightColor }}></div>
-      <Header theme={theme} setTheme={setTheme} themeLightClass={themeLightClass} themeDarkClass={themeDarkClass} currentTab={currentTab} handleTabClick={handleTabClick} />
-      <main className={appStyle.main}>
-        <About scrollToRef={aboutRef} theme={theme} themeLightClass={themeLightClass} handleTabClick={handleTabClick} />
-        <Portfilio scrollToRef={portfolioRef} theme={theme} themeLightClass={themeLightClass} />
-        <Contacts scrollToRef={contactsRef} theme={theme} themeLightClass={themeLightClass} />
-      </main>
+      <div className={appStyle.mainWrap}>
+        <Header theme={theme} setTheme={setTheme} themeLightClass={themeLightClass} themeDarkClass={themeDarkClass} currentTab={currentTab} handleTabClick={handleTabClick} />
+        <main className={appStyle.main}>
+          <About scrollToRef={aboutRef} theme={theme} themeLightClass={themeLightClass} handleTabClick={handleTabClick} />
+          <Portfilio scrollToRef={portfolioRef} theme={theme} themeLightClass={themeLightClass} />
+          <Contacts scrollToRef={contactsRef} theme={theme} themeLightClass={themeLightClass} />
+        </main>
+      </div>
+      
     </div>
   );
 }

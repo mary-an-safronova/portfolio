@@ -1,7 +1,6 @@
 .app {
   width: 100vw;
   position: relative;
-  padding-top: 100px;
 }
 
 .parallelogramLeft {
@@ -40,7 +39,31 @@
   background-color: rgb(255, 255, 255);
 }
 
-.main {
+.mainWrap {
   width: 80vw;
   margin: auto;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    max-width: 1152px;
+    width: 100%;
+  }
+
+  .mainWrap {
+    max-width: 1152px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainWrap {
+    width: 90vw;
+  }
 }
