@@ -29,6 +29,7 @@
 .infoWrap {
     margin: 50px 0 50px 50px;
     width: 70%;
+    box-sizing: border-box;
 }
 
 .title {
@@ -159,10 +160,12 @@
 
     .innerWrap {
         flex-direction: column;
+        align-items: flex-end;
     }
 
     .infoWrap {
-        margin: 100px 50px 0 50px;
+        margin: 150px 50px 0 50px;
+        width: calc(100% - 100px);
     }
 
     .skillsTitle {
@@ -194,7 +197,8 @@
 
 @media screen and (max-width: 550px) {
     .infoWrap {
-        margin: 20px;
+        margin: 120px 20px 0 20px;
+        width: calc(100% - 40px);
     }
 
     .buttonWrap {
