@@ -127,7 +127,7 @@
     
     .description {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 18px;
     }
 
     .skillsTitle {
@@ -168,6 +168,11 @@
         width: calc(100% - 100px);
     }
 
+    .description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     .skillsTitle {
         font-size: 14px;
         margin-top: 20px;
@@ -180,12 +185,6 @@
 
     .photoWrap {
         margin: 0;
-    }
-
-    .buttonWrap {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
     }
 
     .btn {
@@ -204,11 +203,6 @@
     .description {
         font-size: 12px;
         line-height: 16px;
-    }
-
-    .buttonWrap {
-        margin: 0;
-        width: 120px;
     }
 
     .btn {
