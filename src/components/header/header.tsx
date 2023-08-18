@@ -7,7 +7,6 @@ type Props = {
     themeLightClass: string;
     themeDarkClass: string;
     currentTab: string;
-    // setCurrentTab: (currentTab: string) => void;
     handleTabClick: (value: string) => void;
 }
 
@@ -33,15 +32,6 @@ const Header: FC<Props> = ({ theme, setTheme, themeLightClass, themeDarkClass, c
     // Классы кнопок в зависимости от тем
     const themeBtnColorClass = theme !== themeLightClass ? headerStyle.btn_color_darkTheme : headerStyle.btn_color_lightTheme;
     const navBtnThemeClass = theme !== themeLightClass ? headerStyle.btn_color_darkTheme : (headerStyle.btn_color_lightTheme && headerStyle.btn_nav_lightTheme);
-
-    // // Реализация перемещения скролла страницы до нужного блока в зависимости от переключения кнопки меню
-    // const handleTabClick = (value: string) => {
-    //     const block = document.getElementById(value);
-    //     if (block) {
-    //         block.scrollIntoView({ behavior: "smooth" });
-    //         setTimeout(() => setCurrentTab(value), 500);
-    //     }
-    // };
 
     return (
         <header className={`${headerStyle.header}`} style={{ backgroundColor: parallelogramLeftColor }}>

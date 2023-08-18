@@ -95,6 +95,16 @@
     opacity: 0.6;
 }
 
+@media screen and (max-width: 768px) {
+    .contactsTitle {
+        font-size: 26px;
+    }
+
+    .contactTitle {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .contactsWrap {
         padding: 20px;

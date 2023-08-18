@@ -78,5 +78,14 @@
 @media screen and (max-width: 768px) {
     .title {
         margin: 0;
+        font-size: 26px;
+    }
+
+    .cardTitle {
+        font-size: 22px;
+    }
+
+    .cardSubtitle {
+        font-size: 16px;
     }
 }
