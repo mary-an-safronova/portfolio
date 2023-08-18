@@ -201,6 +201,11 @@
         width: calc(100% - 40px);
     }
 
+    .description {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
     .buttonWrap {
         margin: 0;
         width: 120px;

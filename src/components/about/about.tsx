@@ -15,8 +15,8 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
     const themeTextColorClass = theme !== themeLightClass ? aboutStyle.text_color_darkTheme : aboutStyle.text_color_lightTheme;
 
     return (
-        <section className={`${aboutStyle.wrap}`} id='about' ref={scrollToRef}>
-            <div className={`${aboutStyle.innerWrap} ${theme !== themeLightClass ? aboutStyle.innerWrap_theme_dark : aboutStyle.innerWrap_theme_light} ${themeTextColorClass}`}>
+        <section className={`${aboutStyle.wrap} ${theme !== themeLightClass ? aboutStyle.innerWrap_theme_dark : aboutStyle.innerWrap_theme_light}`} id='about' ref={scrollToRef}>
+            <div className={`${aboutStyle.innerWrap} ${themeTextColorClass}`}>
                 <div className={aboutStyle.infoWrap}>
                     <h1 className={aboutStyle.title}>Mariia Safronova</h1>
                     <p className={aboutStyle.subtitle}>A Web Developer</p>
