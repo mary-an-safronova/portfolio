@@ -1,6 +1,7 @@
 import aboutStyle from './about.module.css';
 import { FC } from 'react';
 import photoImg from '../../images/portfolio_photo.png';
+// import CV from '../../Мария_Сафронова_Резюмe.pdf';
 
 type Props = {
     theme: string;
@@ -47,7 +48,9 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Linux</p></div>
                 </div>
                 <div className={aboutStyle.buttonWrap}>
-                    <button className={`${aboutStyle.btn} ${themeTextColorClass}`}>Download CV</button>
+                    <a href={require("../../files/Mary_Safronova_Resume.pdf")} target='blank'>
+                        <button className={`${aboutStyle.btn} ${themeTextColorClass}`}>Download CV</button>
+                    </a>
                     <button className={`${aboutStyle.btn} ${themeTextColorClass}`}
                         onClick={() => handleTabClick('contacts')}
                     >Contacts</button>
