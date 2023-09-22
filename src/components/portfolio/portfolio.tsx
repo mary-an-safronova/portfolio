@@ -15,13 +15,18 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
 
     return (
         <section className={`${portfolioStyle.wrap} ${themeTextColorClass}`} id='portfolio' ref={scrollToRef}>
-            <h2 className={portfolioStyle.title}>My projects</h2>
+            <h2 className={portfolioStyle.title}>Мои проекты</h2>
             <ul className={portfolioStyle.innerWrap}>
                 <li>
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/react-burger/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Stellar Burgers</h3>
-                            <p className={portfolioStyle.cardSubtitle}>The space burger joint application.</p>
+                            <p className={portfolioStyle.cardSubtitle}>Веб-приложение с возможностью сборки и заказа бургера. Drag and Drop.
+                                Модальные окна. Счетчики ингредиентов и цены. Регистрация и авторизация
+                                пользователей, восстановление пароля, редактирование личных данных.
+                                Просмотр заказов и их статусов в реальном времени. Реализовано
+                                взаимодействие с сервером.
+                            </p>
                         </div>
                     </a>
                 </li>
@@ -29,7 +34,11 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/algososh/#/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Algososh</h3>
-                            <p className={portfolioStyle.cardSubtitle}>Web application with visualization of popular algorithms and data structures.</p>
+                            <p className={portfolioStyle.cardSubtitle}>Веб приложение с визуализацией популярных алгоритмов и
+                                структур данных. Эта проектная работа заточена на анимацию и поэтапное
+                                отображение работы алгоритма, что позволит вам детальнее понять каждый
+                                шаг его работы.
+                            </p>
                         </div>
                     </a>
                 </li>
@@ -37,7 +46,12 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/mesto-project/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Mesto</h3>
-                            <p className={portfolioStyle.cardSubtitle}>The project is an interactive web page with photos and names of various places.</p>
+                            <p className={portfolioStyle.cardSubtitle}>Интерактивная веб-страница с фотографиями и названиями
+                                различных мест планеты. Возможность редактирования личных данных,
+                                просмотра, добавления и удаления фото по ссылке. Возможность ставить и
+                                удалять лайки, подсчет и отображение их количества. Реализовано
+                                взаимодействие с сервером.
+                            </p>
                         </div>
                     </a>
                 </li>
@@ -45,7 +59,9 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/friends/index.html" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Friends</h3>
-                            <p className={portfolioStyle.cardSubtitle}>Web application of the Charity Development Fund.</p>
+                            <p className={portfolioStyle.cardSubtitle}>БФ "Друзья" - командный проект в рамках обучения в Яндекс Практикуме. 
+                                Веб-приложение Фонда развития благотворительности.
+                            </p>
                         </div>
                     </a>
                 </li>
@@ -53,7 +69,7 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/cannot_draw/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Can't Draw</h3>
-                            <p className={portfolioStyle.cardSubtitle}>One-page website with a presentation of the drawing application.</p>
+                            <p className={portfolioStyle.cardSubtitle}>Одностраничный веб-сайт с презентацией приложения для рисования.</p>
                         </div>
                     </a>
                 </li>
@@ -61,7 +77,7 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/russian-travel/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Traveling In Russia</h3>
-                            <p className={portfolioStyle.cardSubtitle}>One-page website about traveling in Russia with photos and descriptions of interesting and beautiful places of the country.</p>
+                            <p className={portfolioStyle.cardSubtitle}>Одностраничный сайт о путешествиях по России с фотографиями и описаниями интересных и красивых мест страны.</p>
                         </div>
                     </a>
                 </li>
@@ -69,7 +85,7 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/how-to-learn-plus/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>How To Learn Plus</h3>
-                            <p className={portfolioStyle.cardSubtitle}>One-page website about teaching techniques, principles and methods.</p>
+                            <p className={portfolioStyle.cardSubtitle}>Одностраничный веб-сайт, посвященный методам обучения, принципам и методикам.</p>
                         </div>
                     </a>
                 </li>
