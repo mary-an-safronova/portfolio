@@ -20,7 +20,7 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                 <h1 className={aboutStyle.title}>Мария Сафронова</h1>
                 <p className={aboutStyle.subtitle}>Web-разработчик</p>
                 <p className={aboutStyle.description}>
-                    Я являюсь Frontend-разработчиком.<br/>
+                    Я Frontend-разработчик.<br/>
                     Живу в Москве.<br/>
                     На протяжении последнего года являюсь студентом курса "Веб-разработчик плюс" от Яндекс.Практикума.<br/>
                     Моя страсть - разработка современных веб-сайтов и приложений.<br/>

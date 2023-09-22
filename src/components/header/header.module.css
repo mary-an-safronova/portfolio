@@ -24,6 +24,92 @@
     -o-transform: skew(-20deg);
 }
 
+
+
+.toggleContainer {
+	box-sizing: border-box;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	border-radius: 56px;
+	background: rgb(198, 198, 225);
+	font-weight: bold;
+	color: rgb(133, 133, 173);
+	cursor: pointer;
+	column-gap: -25px;
+	border: 0;
+	cursor: pointer;
+}
+
+.toggleContainer::before {
+	content: '';
+	position: absolute;
+	width: 54%;
+	height: 100%;
+	left: 0;
+	border-radius: 56px;
+	background: white;
+  box-shadow: 0 0 10px rgb(133, 133, 173);
+	transition: all 0.3s;
+}
+
+.darkThemeBtn {
+	text-transform: uppercase;
+	padding: 6px;
+	text-align: center;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.06em;
+}
+
+.lightThemeBtn {
+	text-transform: uppercase;
+	padding: 6px;
+	text-align: center;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.06em;
+}
+
+.toggleCheckbox {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.toggleCheckbox:checked + .toggleContainer::before {
+	left: 46%;
+}
+
+.toggleCheckbox:checked + .toggleContainer .darkThemeBtn {
+	color: rgb(133, 133, 173);
+	transition: color 0.3s;
+}
+
+.toggleCheckbox:checked + .toggleContainer .lightThemeBtn {
+	color: rgb(133, 133, 173);
+	transition: color 0.3s;
+}
+
+.toggleCheckbox + .toggleContainer .darkThemeBtn {
+	color: rgb(133, 133, 173);
+	transition: color 0.3s;
+}
+
+.toggleCheckbox + .toggleContainer .lightThemeBtn {
+	color: rgb(133, 133, 173);
+	transition: color 0.3s;
+}
+
+
+
 .themeBtnWrap {
   display: flex;
   align-items: center;
@@ -59,11 +145,6 @@
   box-shadow: none;
   transition: box-shadow 0.3s ease;
   opacity: 0.6;
-}
-
-.themeBtn {
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .btn_color_darkTheme {
@@ -121,7 +202,6 @@
   .themeBtnWrap {
     flex-direction: column;
     justify-content: space-evenly;
-    width: 60px;
   }
 
   .themeBtn {
