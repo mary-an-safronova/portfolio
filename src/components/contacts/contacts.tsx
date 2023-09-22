@@ -1,6 +1,6 @@
 import contactsStyle from './contacts.module.css';
 import { FC, useState } from 'react';
-import { telegramIcon, vkIcon, linkedinIcon, instagramIcon, phoneIcon, emailIcon } from '../../images/icons';
+import { telegramIcon, vkIcon, linkedinIcon, instagramIcon, phoneIcon, emailIcon, codeWarsIcon, gitHubIcon } from '../../images/icons';
 
 type Props = {
     theme: string;
@@ -23,39 +23,48 @@ const Contacts: FC<Props> = ({ theme, themeLightClass, scrollToRef }) => {
     return (
         <section className={`${contactsStyle.wrap}`} id='contacts' ref={scrollToRef}>
             <div className={`${contactsStyle.contactsWrap} ${theme !== themeLightClass ? contactsStyle.wrap_theme_dark : contactsStyle.wrap_theme_light} ${themeTextColorClass}`}>
-                <h2 className={contactsStyle.contactsTitle}>Contacts</h2>
-                <p className={contactsStyle.contactTitle}>E-mail</p>
+                <h2 className={contactsStyle.contactsTitle}>Контакты</h2>
+                <p className={contactsStyle.contactTitle}>Почта</p>
                 <div className={contactsStyle.iconContactWrap}>
                     <img className={contactsStyle.contactImg} src={emailIcon} alt="E-mail icon" />
                     <p className={contactsStyle.contact}>mary.an.safronova@yandex.ru</p>
                 </div>
 
-                <p className={contactsStyle.contactTitle}>Phone</p>
+                <p className={contactsStyle.contactTitle}>Телефон</p>
                 <div className={contactsStyle.iconContactWrap}>
                     <img className={contactsStyle.contactImg} src={phoneIcon} alt="Phone icon" />
                     <button className={`${contactsStyle.contactNumWrap} ${themeTextColorClass}`} onClick={showNumber} style={{ backgroundColor: colorBtn, transition: 'background-color 0.3s ease' }}>{num}</button>   
                 </div>
 
-                <p className={contactsStyle.contactTitle}>Social</p>
                 <ul className={contactsStyle.socialWrap}>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://t.me/Mary_Safronova" target='blank'>
-                            <img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" />
+                            <img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' />
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://www.linkedin.com/in/mariia-safronova-1bb3a9288/" target='blank'>
-                            <img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" />
+                            <img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' />
+                        </a>
+                    </li>
+                    <li className={contactsStyle.socialIcon}>
+                        <a className={contactsStyle.link} href="https://www.codewars.com/users/mary-an-safronova" target='blank'>
+                            <img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' />
+                        </a>
+                    </li>
+                    <li className={contactsStyle.socialIcon}>
+                        <a className={contactsStyle.link} href="https://github.com/mary-an-safronova" target='blank'>
+                            <img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' />
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://vk.com/marya_an" target='blank'>
-                            <img className={contactsStyle.img} src={vkIcon} alt="VK icon" />
+                            <img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' />
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://instagram.com/marya.safronova?igshid=ZGUzMzM3NWJiOQ==" target='blank'>
-                            <img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" />
+                            <img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' />
                         </a>
                     </li>
                 </ul>
