@@ -39,32 +39,56 @@ const Contacts: FC<Props> = ({ theme, themeLightClass, scrollToRef }) => {
                 <ul className={contactsStyle.socialWrap}>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://t.me/Mary_Safronova" target='blank'>
-                            <img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' />
+                            <span><img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' /></span>
+                            <span><img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' /></span>
+                            <span><img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' /></span>
+                            <span><img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' /></span>
+                            <span><img className={contactsStyle.img} src={telegramIcon} alt="Telegram icon" title='Telegram' /></span>
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://www.linkedin.com/in/mariia-safronova-1bb3a9288/" target='blank'>
-                            <img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' />
+                            <span><img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' /></span>
+                            <span><img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' /></span>
+                            <span><img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' /></span>
+                            <span><img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' /></span>
+                            <span><img className={contactsStyle.img} src={linkedinIcon} alt="LinkedIn icon" title='LinkedIn' /></span>
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://www.codewars.com/users/mary-an-safronova" target='blank'>
-                            <img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' />
+                            <span><img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' /></span>
+                            <span><img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' /></span>
+                            <span><img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' /></span>
+                            <span><img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' /></span>
+                            <span><img className={contactsStyle.img} src={codeWarsIcon} alt="CodeWars icon" title='CodeWars' /></span>
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://github.com/mary-an-safronova" target='blank'>
-                            <img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' />
+                            <span><img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' /></span>
+                            <span><img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' /></span>
+                            <span><img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' /></span>
+                            <span><img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' /></span>
+                            <span><img className={contactsStyle.img} src={gitHubIcon} alt="GitHub icon" title='GitHub' /></span>
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://vk.com/marya_an" target='blank'>
-                            <img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' />
+                            <span><img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' /></span>
+                            <span><img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' /></span>
+                            <span><img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' /></span>
+                            <span><img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' /></span>
+                            <span><img className={contactsStyle.img} src={vkIcon} alt="VK icon" title='VK' /></span>
                         </a>
                     </li>
                     <li className={contactsStyle.socialIcon}>
                         <a className={contactsStyle.link} href="https://instagram.com/marya.safronova?igshid=ZGUzMzM3NWJiOQ==" target='blank'>
-                            <img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' />
+                            <span><img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' /></span>
+                            <span><img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' /></span>
+                            <span><img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' /></span>
+                            <span><img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' /></span>
+                            <span><img className={contactsStyle.img} src={instagramIcon} alt="Instagram icon" title='Instagram' /></span>
                         </a>
                     </li>
                 </ul>

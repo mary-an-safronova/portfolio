@@ -79,20 +79,61 @@
     display: flex;
     list-style-type: none;
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 50px 0 0 0;
+    position: relative;
 }
 
 .socialIcon {
-    margin-right: 20px;
+    position: relative;
+    list-style: none;
+    margin: 0 50px 0 0;
+}
+
+.socialIcon span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px !important;
+    transition: 1.5s ease-out;
+}
+
+.socialIcon:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.socialIcon:hover span:nth-child(5){
+    transform: translate(12px, -12px);
+    opacity: 1;
+}
+.socialIcon:hover span:nth-child(4){
+    transform: translate(9px, -9px);
+    opacity: .4;
+}
+.socialIcon:hover span:nth-child(3){
+    transform: translate(6px, -6px);
+    opacity: .3;
+}
+.socialIcon:hover span:nth-child(2){
+    transform: translate(3px, -3px);
+    opacity: .2;
+}
+.socialIcon:hover span:nth-child(1){
+    transform: translate(0px, 0px);
+    opacity: .1;
 }
 
 .img {
     width: 40px;
     aspect-ratio: 1 / 1;
-}
-
-.link:hover {
-    opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
