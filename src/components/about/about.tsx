@@ -35,7 +35,6 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>TypeScript</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>React</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Redux</p></div>
-                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Node.js</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>npm</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Git</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Gitflow</p></div>
@@ -46,9 +45,13 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Layout</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>BEM-Nested</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>OOP</p></div>
-                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Linux</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Cypress</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Jest</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Node.js</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Express</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>MongoDB</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>ODM Mongoose</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Linux</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Figma</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Notion</p></div>
                 </div>
