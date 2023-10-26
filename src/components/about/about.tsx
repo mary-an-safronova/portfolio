@@ -25,7 +25,7 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     На протяжении последнего года являюсь студентом курса "Веб-разработчик плюс" от Яндекс.Практикума.<br/>
                     Моя страсть - разработка современных веб-сайтов и приложений.<br/>
                     В настоящее время нахожусь в поиске работы.<br/>
-                    Если у Вас имеются интересные предложения, пожалуйста, <a style={{ textDecoration: 'underline', cursor: 'pointer' }} onClick={() => handleTabClick('contacts')}>свяжитесь</a> со мной через почту или Telegram.<br/>
+                    Если у Вас имеются интересные предложения, пожалуйста, <span style={{ textDecoration: 'underline', cursor: 'pointer' }} onClick={() => handleTabClick('contacts')}>свяжитесь</span> со мной через почту или Telegram.<br/>
                 </p>
                 <p className={aboutStyle.skillsTitle}>Мои навыки</p>
                 <div className={aboutStyle.skillsContainer}>

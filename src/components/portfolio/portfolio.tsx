@@ -56,6 +56,17 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     </a>
                 </li>
                 <li>
+                    <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://github.com/mary-an-safronova/mesto-project-plus" target='blank'>
+                        <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
+                            <h3 className={portfolioStyle.cardTitle}>Бэкенд Mesto. Каркас API Mesto</h3>
+                            <p className={portfolioStyle.cardSubtitle}>Серверная часть для проекта Mesto написана на Express. 
+                            В качестве базы данных выбрана MongoDB с маппером Mongoose. При каждом запросе на сервер все ошибки обрабатываются. 
+                            Роуты /users и /cards защищены авторизацией.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/friends/index.html" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Friends</h3>
