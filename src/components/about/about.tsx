@@ -51,6 +51,10 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Express</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>MongoDB</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>ODM Mongoose</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>NestJS</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>TypeORM</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>SQL</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>PostgreSQL</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Linux</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Figma</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Notion</p></div>
