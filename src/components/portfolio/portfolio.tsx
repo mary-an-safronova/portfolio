@@ -67,6 +67,18 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     </a>
                 </li>
                 <li>
+                    <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://github.com/mary-an-safronova/kupipodariday-backend" target='blank'>
+                        <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
+                            <h3 className={portfolioStyle.cardTitle}>Бэкенд КупиПодариДай</h3>
+                            <p className={portfolioStyle.cardSubtitle}>Бэкенд сервиса вишлистов КупиПодариДай. 
+                                В нём каждый зарегистрированный пользователь может рассказать о том, какой подарок он бы хотел получить, 
+                                а также скинуться на подарок для другого пользователя, указав сумму, которую готов на это потратить. 
+                                Используемые технологии: NestJS, TypeORM. В качестве базы данных выбрана PostgreSQL.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/friends/index.html" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Friends</h3>
