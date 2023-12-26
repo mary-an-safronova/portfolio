@@ -43,6 +43,29 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     </a>
                 </li>
                 <li>
+                    <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://github.com/mary-an-safronova/web-plus-docker-and-compose" target='blank'>
+                        <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
+                            <h3 className={portfolioStyle.cardTitle}>Контейнеризация и деплой сервиса КупиПодариДай</h3>
+                            <p className={portfolioStyle.cardSubtitle}>Сервис контейнеризирован при помощи Docker и Docker Compose. 
+                                Он состоит из трех частей: бэкенд-сервиса на Node.js, БД (PostrgreSQL) и фронтенда на React (раздаётся nginx), 
+                                развернут в Яндекс Облаке.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://github.com/mary-an-safronova/kupipodariday-backend" target='blank'>
+                        <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
+                            <h3 className={portfolioStyle.cardTitle}>Бэкенд КупиПодариДай</h3>
+                            <p className={portfolioStyle.cardSubtitle}>Бэкенд сервиса вишлистов КупиПодариДай. 
+                                В нём каждый зарегистрированный пользователь может рассказать о том, какой подарок он бы хотел получить, 
+                                а также скинуться на подарок для другого пользователя, указав сумму, которую готов на это потратить. 
+                                Используемые технологии: NestJS, TypeORM. В качестве базы данных выбрана PostgreSQL.
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
                     <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://mary-an-safronova.github.io/mesto-project/" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
                             <h3 className={portfolioStyle.cardTitle}>Mesto</h3>
@@ -67,13 +90,12 @@ const Portfilio: FC<Props> = ({ scrollToRef,theme, themeLightClass }) => {
                     </a>
                 </li>
                 <li>
-                    <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://github.com/mary-an-safronova/kupipodariday-backend" target='blank'>
+                    <a className={`${portfolioStyle.link} ${themeTextColorClass}`} href="https://github.com/mary-an-safronova/web-plus-pm2-deploy" target='blank'>
                         <div className={`${portfolioStyle.card} ${themeBackgroundColorClass}`}>
-                            <h3 className={portfolioStyle.cardTitle}>Бэкенд КупиПодариДай</h3>
-                            <p className={portfolioStyle.cardSubtitle}>Бэкенд сервиса вишлистов КупиПодариДай. 
-                                В нём каждый зарегистрированный пользователь может рассказать о том, какой подарок он бы хотел получить, 
-                                а также скинуться на подарок для другого пользователя, указав сумму, которую готов на это потратить. 
-                                Используемые технологии: NestJS, TypeORM. В качестве базы данных выбрана PostgreSQL.
+                            <h3 className={portfolioStyle.cardTitle}>Деплой приложения Mesto на сервер</h3>
+                            <p className={portfolioStyle.cardSubtitle}>Создан и настроен удалённый сервер, 
+                                описан сценарий автоматического деплоя при помощи pm2, 
+                                настроены SSL-сертификаты и перезапуск приложения при падении сервера.
                             </p>
                         </div>
                     </a>
