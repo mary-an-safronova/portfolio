@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d15ac4e3.css",
+    "main.css": "/portfolio/static/css/main.0563b313.css",
     "main.js": "/portfolio/static/js/main.501b74e9.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Mary_Safronova_Resume.pdf": "/portfolio/static/media/Mary_Safronova_Resume.e900c1d935f8cd393c0d.pdf",
@@ -14,12 +14,12 @@
     "static/media/phone.png": "/portfolio/static/media/phone.35a4dc3ffb59375d67b4.png",
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.2f43c8beaaba9d5b3e50.png",
     "index.html": "/portfolio/index.html",
-    "main.d15ac4e3.css.map": "/portfolio/static/css/main.d15ac4e3.css.map",
+    "main.0563b313.css.map": "/portfolio/static/css/main.0563b313.css.map",
     "main.501b74e9.js.map": "/portfolio/static/js/main.501b74e9.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d15ac4e3.css",
+    "static/css/main.0563b313.css",
     "static/js/main.501b74e9.js"
   ]
 }
