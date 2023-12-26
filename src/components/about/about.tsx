@@ -58,6 +58,16 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Linux</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Figma</p></div>
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Notion</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>nginx</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>pm2</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Docker</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Docker Compose</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>CLI Docker</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>DockerHub</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>SSH</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>certbot</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Контейнеризация</p></div>
+                    <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Деплой</p></div>
                 </div>
                 <div className={aboutStyle.buttonWrap}>
                     <a href={require("../../files/Mary_Safronova_Resume.pdf")} target='blank'>
