@@ -70,7 +70,7 @@ const About: FC<Props> = ({ theme, themeLightClass, scrollToRef, handleTabClick 
                     <div className={aboutStyle.skill}><p className={aboutStyle.skillText}>Деплой</p></div>
                 </div>
                 <div className={aboutStyle.buttonWrap}>
-                    <a href={require("../../files/Mary_Safronova_Resume_03_2024.pdf")} target='blank'>
+                    <a href={require("../../files/Mary_Safronova_Resume_04_2024.pdf")} target='blank'>
                         <button className={`${aboutStyle.btn} ${themeTextColorClass}`}>Резюме</button>
                     </a>
                     <button className={`${aboutStyle.btn} ${themeTextColorClass}`}
