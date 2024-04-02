@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0563b313.css",
-    "main.js": "/portfolio/static/js/main.501b74e9.js",
+    "main.js": "/portfolio/static/js/main.9c0b397e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Mary_Safronova_Resume.pdf": "/portfolio/static/media/Mary_Safronova_Resume.e900c1d935f8cd393c0d.pdf",
     "static/media/portfolio_photo.png": "/portfolio/static/media/portfolio_photo.5035b10cb6feab30cd66.png",
     "static/media/codeWars.png": "/portfolio/static/media/codeWars.55929a5c421f58d3317b.png",
     "static/media/instagram.png": "/portfolio/static/media/instagram.c0b11cbe98a0cbc2a8a5.png",
     "static/media/gitHub.png": "/portfolio/static/media/gitHub.b2c33ab45c1c5a5665b7.png",
     "static/media/telegram.png": "/portfolio/static/media/telegram.6a1a8dc4e706fa04a271.png",
+    "static/media/Mary_Safronova_Resume_03_2024.pdf": "/portfolio/static/media/Mary_Safronova_Resume_03_2024.b76bf68b1691015398ed.pdf",
     "static/media/email.png": "/portfolio/static/media/email.9e383e3ecb5e79748885.png",
     "static/media/VK.png": "/portfolio/static/media/VK.1cd4f0a8d2b31b0be547.png",
     "static/media/phone.png": "/portfolio/static/media/phone.35a4dc3ffb59375d67b4.png",
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.2f43c8beaaba9d5b3e50.png",
     "index.html": "/portfolio/index.html",
     "main.0563b313.css.map": "/portfolio/static/css/main.0563b313.css.map",
-    "main.501b74e9.js.map": "/portfolio/static/js/main.501b74e9.js.map",
+    "main.9c0b397e.js.map": "/portfolio/static/js/main.9c0b397e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0563b313.css",
-    "static/js/main.501b74e9.js"
+    "static/js/main.9c0b397e.js"
   ]
 }
